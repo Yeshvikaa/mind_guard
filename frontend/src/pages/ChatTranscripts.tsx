@@ -83,10 +83,10 @@ export const ChatTranscripts: React.FC = () => {
               >
                 <div className="flex items-center gap-2 mb-1.5">
                   <img
-                    src={`http://localhost:5000${t.user?.profilePhoto}`}
+                    src={`https://mind-guard-bcc4.onrender.com${t.user?.profilePhoto}`}
                     className="w-7 h-7 rounded-full object-cover border border-slate-100"
                     alt=""
-                    onError={e => { (e.target as HTMLImageElement).src = 'http://localhost:5000/uploads/default-avatar.png'; }}
+                    onError={e => { (e.target as HTMLImageElement).src = 'https://mind-guard-bcc4.onrender.com/uploads/default-avatar.png'; }}
                   />
                   <span className="font-bold text-xs text-slate-800 dark:text-white truncate">{t.user?.fullName}</span>
                 </div>
