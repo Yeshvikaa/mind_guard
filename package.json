@@ -12,6 +12,8 @@
 
     "build": "npm run build --prefix frontend",
 
+    "start": "npm run start-backend",
+
     "start-backend": "npm run start --prefix backend",
 
     "start-frontend": "npm run preview --prefix frontend"
