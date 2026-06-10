@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Configure Axios defaults
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://mind-guard-bcc4.onrender.com/api',
   withCredentials: true
 });
 
