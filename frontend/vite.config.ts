@@ -8,11 +8,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://mind-guard-bcc4.onrender.com',
         changeOrigin: true
       },
       '/uploads': {
-        target: 'http://localhost:5000',
+        target: 'https://mind-guard-bcc4.onrender.com',
         changeOrigin: true
       }
     }
