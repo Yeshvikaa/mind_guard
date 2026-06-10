@@ -101,11 +101,11 @@ export const Profile: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center gap-6 pb-6 border-b border-slate-100 dark:border-dark-850">
             <div className="relative w-24 h-24 rounded-full border border-slate-200 dark:border-dark-750 overflow-hidden bg-slate-50">
               <img 
-                src={photoPreview || (user?.profilePhoto ? `http://localhost:5000${user.profilePhoto}` : '/uploads/default-avatar.png')} 
+                src={photoPreview || (user?.profilePhoto ? `https://mind-guard-bcc4.onrender.com${user.profilePhoto}` : '/uploads/default-avatar.png')} 
                 alt="Avatar" 
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'http://localhost:5000/uploads/default-avatar.png';
+                  (e.target as HTMLImageElement).src = 'https://mind-guard-bcc4.onrender.com/uploads/default-avatar.png';
                 }}
               />
             </div>
