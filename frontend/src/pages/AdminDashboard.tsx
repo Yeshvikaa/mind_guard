@@ -210,11 +210,11 @@ export const AdminDashboard: React.FC = () => {
                 >
                   <div className="flex items-center gap-3">
                     <img 
-                      src={`http://localhost:5000${alert.user.profilePhoto}`} 
+                      src={`https://mind-guard-bcc4.onrender.com${alert.user.profilePhoto}`} 
                       className="w-10 h-10 rounded-full object-cover border border-slate-100"
                       alt=""
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'http://localhost:5000/uploads/default-avatar.png';
+                        (e.target as HTMLImageElement).src = 'https://mind-guard-bcc4.onrender.com/uploads/default-avatar.png';
                       }}
                     />
                     <div>
